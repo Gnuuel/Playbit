@@ -1,0 +1,27 @@
+@mixin cent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin center ($once, $twice) {
+    display: flex;
+    align-items: $once;
+    justify-content: $twice;
+}
+
+@mixin hov{
+    background-color: #ed145c91;
+    border-color: #ed145c91;
+} 
+@mixin linkk {
+    font-family: 'Poppins', sans-serif;;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 15px 30px;
+    transition: .3s;
+    border-radius: 5px;
+    background-color: #ed145b;
+    border-color: #ed145b;
+}

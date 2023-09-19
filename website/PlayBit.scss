@@ -1,0 +1,1359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import "./Assets/Style/all";
+//home sass 
+#home{
+    margin-top: 30px;
+    width: 100%;
+    .home{
+        .container{
+            .home-content{
+                width: 100%;
+                a{
+                    position: relative;
+                    }
+                }
+            }
+        }
+    }
+
+//home sass 
+
+// again content sass 
+#again-content{
+    margin-top: 80px;
+    .again-content{
+        .container{
+            .again-text{
+                text-align: center;
+                padding: 0px 264px;
+                h3{
+                    font-family: $fonts;
+                    font-size: 36px;
+                    font-weight: 400;
+                    line-height: 48px;
+                    letter-spacing: 0em;
+                    color: $logoTextColor;
+                    margin-bottom: 20px;
+                }
+                p{
+                    margin-bottom: 50px;
+                    font-family: Raleway;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    color: #173261;
+                }
+                a{
+                    @include linkk;
+                    padding: 15px 55px;
+                    position: relative;
+                    
+                    i{
+                        position: absolute;
+                        right: 13%;
+                        top: 36%;
+                        transition: .3s;
+                    }
+                    &:hover{
+                        @include hov;
+                        i{
+                            right: 5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// again content sass 
+
+// festival sass 
+#festival{
+    margin-top: 100px;
+    .festival{
+        .container{
+            .full-festival{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                .festival-content{
+                    width: 48%;
+                    height: 400px;
+                    text-align: left;
+                    flex-direction: column;
+                    h2{
+                        font-family: $fonts;
+                        font-size: 36px;
+                        font-weight: 400;
+                        line-height: 48px;
+                        letter-spacing: 0em;
+                        color: $logoTextColor;
+                    }
+                    p{
+                        margin-top: 18px;
+                        margin-bottom: 33px;
+                        font-family: Raleway;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        color: #173261;
+                    }
+                    .festival-list{
+                        margin-bottom: 62px;
+                        .festival-list-item{
+                            font-family: Raleway;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            letter-spacing: 0em;
+                            color: #173261;
+                            span{
+                                margin-right: 2px;
+                                i{
+                                    color: $logoTextColor;
+                                }
+                            }
+                            &:not(:last-child){
+                                margin-bottom: 5px;
+                            }
+                        }
+                    }
+                    a{
+                        font-family: 'Poppins', sans-serif;;
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        border: 1px solid #ed145b;
+                        background-color: #ed145b;
+                        padding: 12px 25px;
+                        transition: .3s;
+                        border-radius: 5px;
+                    &:hover{
+                        @include hov;
+                    }
+                    }
+                    .different{
+                        display: none;
+                        a{
+                        font-family: 'Poppins', sans-serif;;
+                        background-color: #ffffff;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        border:1px solid #ed145b;
+                        color: #ed145b;
+                        padding: 12px 25px;
+                        transition: .3s;
+                        border-radius: 5px;
+                        &:hover{
+                            background-color: #ed145c91;
+                            border-color: #ed145c91;
+                            color: #ffffff;    
+                        }
+                        
+                        }
+                    }
+                }
+                .festival-img {
+                    width: 48%;
+                    height: 400px;
+                    figure{
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// festival sass 
+
+// spotify sass 
+
+#spotify{
+    margin-top: 100px;
+    .spotify{
+        .container{
+            .full-spotify{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                .spotify-slide{
+                    width: 48%;
+                    height: 400px;
+                }
+                .spotify-content{
+                    width: 48%;
+                    height: 400px;
+                    text-align: left;
+                    h2{
+                        font-family: $fonts;
+                        font-size: 36px;
+                        font-weight: 400;
+                        line-height: 48px;
+                        letter-spacing: 0em;
+                        color: $logoTextColor;
+                    }
+                    p{
+                        margin-top: 18px;
+                        margin-bottom: 33px;
+                        font-family: Raleway;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        color: #173261;
+                    }
+                    .spotify-list{
+                        margin-bottom: 62px;
+                        .spotify-list-item{
+                            font-family: Raleway;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            letter-spacing: 0em;
+                            color: #173261;
+                            &:not(:last-child){
+                                margin-bottom: 5px;
+                            }
+                            span{
+                                margin-right: 2px;
+                                i{
+                                    color: $logoTextColor;
+                                }
+                            }
+                            
+                        }
+                    }
+                    a{
+                        font-family: 'Poppins', sans-serif;;
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        border: 1px solid #ed145b;
+                        background-color: #ed145b;
+                        padding: 12px 25px;
+                        transition: .3s;
+                        border-radius: 5px;
+                    &:hover{
+                        @include hov;
+                    }
+                    }
+                    .different{
+                        display: none;
+                        a{
+                        font-family: 'Poppins', sans-serif;;
+                        background-color: #ffffff;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        border:1px solid #ed145b;
+                        color: #ed145b;
+                        padding: 12px 25px;
+                        transition: .3s;
+                        border-radius: 5px;
+                        &:hover{
+                            background-color: #ed145c91;
+                            border-color: #ed145c91;
+                            color: #ffffff;    
+                        }
+                        
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+// spotify sass 
+
+// newwscard sass 
+#news-card{
+    margin-top: 75px;
+    .news-card{
+        padding: 50px 0;
+        background-color:#be030387;
+        .container{
+            .cards{
+                @include center (center, space-between);
+                flex-wrap: wrap;
+                .card{
+                    margin-top: 25px;
+                    width: 32%;
+                    background-color: #ffffff;
+                    box-shadow: 0px 0px 20px 0px #17326133;
+                    cursor: pointer;
+                    .card-full{
+                        padding: 30px;
+                        .card-img{
+                           width: 100%;
+                           height: 200px;
+                            figure{
+                                width: 100%;
+                                height: 100%;
+                                img{
+                                    width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                               }
+                           }
+                       }
+                       .card-content{
+                           margin-top: 20px;
+                        h3{
+                            font-family: $fonts;
+                            font-size: 30px;
+                            font-weight: 400;
+                            line-height: 38px;
+                            letter-spacing: 0em;
+                            color: $logoTextColor;
+                        }
+                        p{
+                            margin-top: 20px;
+                            margin-bottom: 25px;
+                            font-family: $fontral;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            letter-spacing: 0em;
+                            color: #173261;
+                        }
+                         h4{
+                             text-align: center;
+                            font-family: 'Poppins', sans-serif;;
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            border-color: #ed145b;
+                            background-color: #ed145b;
+                            padding: 13px 30px;
+                            transition: .3s;
+                            border-radius: 5px;
+                            font-weight: 400;
+                            &:hover{
+                                @include hov;
+                            }
+                         }
+                       }
+                   } 
+                }
+            }
+        }
+    }
+}
+
+// newwscard sass 
+
+// parties sass 
+#parties{
+    margin-top: 100px;
+    .parties{
+        padding: 50px 0;
+        background-color:#be030387;
+        .container{
+            .full-parties{
+                width: 100%;
+                height: 400px;
+            }
+        }
+    }
+}
+// parties sass 
+
+
+// form sass
+#registr{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color:#be030387;
+    .registr{
+        padding: 50px 0;
+        .container{
+                .registr-form{
+                    width: 60%;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    form{
+                        .form-full{
+                            .form-names{
+                                margin-bottom: 15px;
+                                display: flex;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                .label{
+                                    width: 49%;
+                                        label{
+                                            margin-bottom: 5px;
+                                            color: #173261;
+                                            font-size: 16px;
+                                            font-weight: 700;
+                                            line-height: 24px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            display: block;
+                                            font-family: $fontral;
+                                        }
+                                        input{
+                                            width: 100%;
+                                            height: 50px;
+                                            box-shadow: 0px 0px 20px 0px #17326133;
+                                            font-family: $fontral;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            line-height: 24px;
+                                            color: #173261;
+                                            letter-spacing: 0em;
+                                            outline: none;
+                                            border: none;
+                                            padding-left: 10px;
+                                            transition: .3s;
+                                            &:focus{
+                                                border-bottom: 4px solid #ed145b;
+                                            }
+                                        }
+                                }
+                                
+                            }
+                            .form-contact{
+                                margin-bottom: 15px;
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                .label{
+                                    width: 49%;
+                                        label{
+                                            margin-bottom: 5px;
+                                            color: #173261;
+                                            font-size: 16px;
+                                            font-weight: 700;
+                                            line-height: 24px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            display: block;
+                                            font-family: $fontral;
+                                        }
+                                        input{
+                                            width: 100%;
+                                            height: 50px;
+                                            box-shadow: 0px 0px 20px 0px #17326133;
+                                            font-family: $fontral;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            line-height: 24px;
+                                            color: #173261;
+                                            letter-spacing: 0em;
+                                            outline: none;
+                                            border: none;
+                                            padding-left: 10px;
+                                            transition: .3s;
+                                            &:focus{
+                                                border-bottom: 4px solid #ed145b;
+                                            }
+                                        }
+                                }
+                            }
+                            .form-secret{
+                                margin-bottom: 15px;
+                                position: relative;
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                .label{
+                                    width: 49%;
+                                        label{
+                                            color: #173261;
+                                            margin-bottom: 5px;
+                                            font-size: 16px;
+                                            font-weight: 700;
+                                            line-height: 24px;
+                                            letter-spacing: 0em;
+                                            text-align: left;
+                                            display: block;
+                                            font-family: $fontral;
+                                        }
+                                        input{
+                                            width: 100%;
+                                            height: 50px;
+                                            box-shadow: 0px 0px 20px 0px #17326133;
+                                            font-family: $fontral;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            line-height: 24px;
+                                            color: #173261;
+                                            letter-spacing: 0em;
+                                            outline: none;
+                                            border: none;
+                                            padding-left: 10px;
+                                            transition: .3s;
+                                            &:focus{
+                                                border-bottom: 4px solid #ed145b;
+                                            }
+                                        }
+                                 #img{
+                                    height: 50px;
+                                    top: 28px;
+                                    width: 30%;
+                                    position: absolute;
+                                    right: 0;
+                                    margin: 0;
+                                    padding: 0;
+                                    z-index: 10;
+                                    font-size: 20px;
+                                    cursor: pointer;
+                                    opacity: 0;
+                                    filter: alpha(opacity=0);
+                                }
+                                .abs{
+                                    text-align: center;
+                                    height: 50px;
+                                    width: 20%;
+                                   background-color: #ed145b;
+                                   color: #ffffff;
+                                   padding: 11px;
+                                   position: absolute;
+                                   right: 0;
+                                   font-size: 20px;
+                                   i{
+                                       margin-left: 15px;
+                                   }
+                                }       
+                                }
+                                
+                            }
+                            .label{
+                                width: 100%;
+                                    label{
+                                        margin-bottom: 5px;
+                                        color: #173261;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        line-height: 24px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        display: block;
+                                        font-family: $fontral;
+                                    }
+                            textarea{
+                                width: 100%;
+                                height: 140px;
+                                margin-bottom: 15px;
+                                resize: none;
+                                box-shadow: 0px 0px 20px 0px #17326133;
+                                font-family: $fontral;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 24px;
+                                letter-spacing: 0em;
+                                color: #173261;
+                                outline: none;
+                                border: none;
+                                padding: 10px;
+                                &:focus{
+                                    border-bottom: 4px solid #ed145b;
+                                }
+                            }
+                        }
+                            .form-finish{
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                
+                                .cekbx{
+                                    width: 47%;
+                                    input{
+                                    box-shadow: 0px 0px 20px 0px #17326133;
+                                }
+                                .cek{
+                                    font-family: $fontral;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 15px;
+                                    letter-spacing: 0em;
+                                    color: #173261;
+                                }    
+                                }
+                                
+                                button{
+                                    width: 30%;
+                                    cursor: pointer;
+                                    font-family: $fontral;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 24px;
+                                    letter-spacing: 0em;
+                                    color: #ed145b;
+                                    background-color: #ffffff;
+                                    text-transform: uppercase;
+                                    padding: 8px 30px;
+                                    transition: .3s;
+                                    border-radius: 5px;
+                                    border: 2px solid #ed145b;
+                                    &:hover{
+                                        color: #ffffff;
+                                        background-color: #ed145b;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}
+// form sass 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px){
+    // again content media 
+    #again-content{
+        .again-content{
+            .container{
+                .again-text{
+                    padding: 0px 186px;
+                }
+            }
+        }
+    }
+    // again content media 
+    
+    // festival media 
+    #festival{
+        margin-top: 100px;
+        .festival{
+            .container{
+                .full-festival{                        
+                .festival-content{
+                    height: 400px;
+                    h2{
+                        font-size: 32px;
+                    }
+                    p{
+                        margin-top: 14px;
+                        line-height: 17px;
+                        margin-bottom: 25px;
+                        font-size: 12px;
+                    }
+                    .festival-list{
+                        margin-bottom: 40px;
+                        .festival-list-item{
+                            font-size: 14px;
+                        }
+                    }
+                    a{
+                        font-size: 14px;
+                        padding: 12px 25px;
+                    }
+                }
+                .festival-img{
+                    height: 380px;
+                }
+                }
+            }
+        }
+    }
+    // festival media 
+
+    // spotify media 
+    
+#spotify{
+    .spotify{
+        .container{
+            .full-spotify{
+                .spotify-slide{
+                    height: 380px;
+                }
+                .spotify-content{
+                    h2{
+                        font-size: 32px;
+                    }
+                    p{
+                        margin-top: 14px;
+                        line-height: 17px;
+                        margin-bottom: 25px;
+                        font-size: 12px;
+                    }
+                    .spotify-list{
+                        margin-bottom: 40px;
+                        .spotify-list-item{
+                            font-size: 14px;
+                            
+                        }
+                    }
+                    a{
+                        font-family: 'Poppins', sans-serif;;
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        border: 1px solid #ed145b;
+                        background-color: #ed145b;
+                        padding: 12px 25px;
+                        transition: .3s;
+                        border-radius: 5px;
+                    &:hover{
+                        @include hov;
+                    }
+                    }
+                    .different{
+                        display: none;
+                        a{
+                            font-size: 14px;
+                            padding: 12px 25px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+    // spotify media 
+
+    // newwscard media 
+#news-card{
+    .news-card{
+        .container{
+            .cards{
+                .card{
+                    width: 32%;
+                    .card-full{
+                        padding: 20px;
+                        .card-img{
+                           width: 100%;
+                           height: 150px;
+                       }
+                       .card-content{
+                        h3{
+                            font-size: 25px;
+                            line-height: 32px;
+                        }
+                        p{
+                            margin-top: 16px;
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                         h4{
+                            font-size: 14px;
+                            padding: 13px 30px;
+                         }
+                       }
+                   } 
+                }
+            }
+        }
+    }
+}
+
+// newwscard media 
+
+
+}
+
+
+@media only screen and (max-width:992px){
+    // again content media 
+    #again-content{
+        .again-content{
+            .container{
+                padding: 0 40px;
+                .again-text{
+                    padding: 0px 120px;
+                }
+            }
+        }
+    }
+    // again content media 
+
+    // festival media 
+    #festival{
+            margin-top: 100px;
+            .festival{
+                .container{
+                    .full-festival{                        
+                    .festival-content{
+                        // width: 42%;
+                        height: 400px;
+                        h2{
+                            font-size: 26px;
+                        }
+                        p{
+                            margin-top: 10px;
+                            margin-bottom: 20px;
+                            font-size: 12px;
+                            line-height: 17px;
+                        }
+                        .festival-list{
+                            margin-bottom: 30px;
+                            .festival-list-item{
+                                font-size: 12px;
+                                &:not(:last-child){
+                                    margin-bottom: 2px;
+                                }
+                            }
+                        }
+                        a{
+                            font-size: 12px;
+                            padding: 10px 22px;
+                        }
+                    }
+                    .festival-img{
+                        // width: 55%;
+                        height: 380px;
+                    }
+                    }
+                }
+            }
+    }
+    // festival media    
+        
+    // spotify media 
+    #spotify{
+    .spotify{
+        .container{
+            .full-spotify{
+                .spotify-slide{
+                    // width: 55%;
+                    height: 380px;
+                }
+                .spotify-content{
+                    // width: 42%;
+                    height: 400px;
+                    h2{
+                        font-size: 26px;
+                    }
+                    p{
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                        font-size: 12px;
+                        line-height: 17px;
+                    }
+                    .spotify-list{
+                        margin-bottom: 30px;
+                        .spotify-list-item{
+                            font-size: 12px;
+                            &:not(:last-child){
+                                margin-bottom: 2px;
+                            }
+                        }
+                    }
+                    a{
+                        font-size: 12px;
+                        padding: 10px 22px;
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+    }
+    // spotify media 
+
+        // newwscard media 
+   #news-card{
+    .news-card{
+        .container{
+            .cards{
+                .card{
+                    width: 48%;
+                    
+                    .card-full{
+                        padding: 15px;
+                        .card-img{
+                           height: 170px;
+                       }
+                       .card-content{
+                        h3{
+                            font-size: 19px;
+                            line-height: 25px;
+                        }
+                        p{
+                            margin-top: 12px;
+                        }
+                         h4{
+                            font-size: 10px;
+                         }
+                       }
+                   } 
+                }
+            }
+        }
+    }
+   }
+
+       // newwscard sass 
+        
+
+
+// form media
+#registr{
+    .registr{
+        .container{
+                .registr-form{
+                    form{
+                        .form-full{
+                            .form-secret{
+                                .label{
+                                .abs{
+                                    width: 23%;
+                                   i{
+                                       margin-left: 0px;
+                                   }
+                                }       
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}
+// form sass        
+    
+}
+
+@media only screen and (max-width: 768px){
+    // home media 
+    #home{
+        margin-top: 30px;
+        width: 100%;
+        .home{
+            .container{
+                .home-content{
+                    width: 100%;
+                }
+            }
+        }
+    } 
+    // home media
+
+    // again content media 
+    #again-content{
+            .again-content{
+                .container{
+                    padding: 0 40px;
+                    .again-text{
+                        padding: 0px 0px;
+                        p{
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                        a{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+    }
+    // again content media 
+
+    // festival media 
+    #festival{
+                    .festival{
+                        .container{
+                            padding: 0 40px;
+                            .full-festival{                        
+                            .festival-content{
+                                text-align: left;
+                                width: 100%;
+                                height: 350px;
+                                h2{
+                                    font-size: 35px;
+                                }
+                                p{
+                                    margin-top: 20px;
+                                    margin-bottom: 20px;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                }
+                                .festival-list{
+                                    margin-bottom: 30px;
+                                    .festival-list-item{
+                                        font-size: 16px;
+                                        span{
+                                            font-size: 16px
+                                        }
+                                        &:not(:last-child){
+                                            margin-bottom: 5px;
+                                        }
+                                    }
+                                }
+                                
+                                .different{
+                                    margin-top: 40px;
+                                    display:block;
+                                    a{
+                                    font-size: 12px;
+                                        padding: 10px 20px;
+                                    }
+                                }
+                            }
+                            .festival-img{
+                                margin-top: 90px;
+                                width: 100%;
+                                height: 350px;
+                            }
+                            }
+                        }
+                    }
+    }
+    // festival media 
+
+    // spotify media 
+    #spotify{
+        .spotify{
+            .container{
+                padding: 0 40px;
+                .full-spotify{
+                    .spotify-slide{
+                        width: 100%;
+                        height: 350px;
+                    }
+                    .spotify-content{
+                        margin-top: 90px;
+                        text-align: left;
+                        width: 100%;
+                        height: 350px;
+                        h2{
+                            font-size: 35px;
+                        }
+                        p{
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                        .spotify-list{
+                            .spotify-list-item{
+                                font-size: 16px;
+                                span{
+                                    font-size: 16px
+                                }
+                                &:not(:last-child){
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+                        .different{
+                            margin-top: 40px;
+                            display:block;
+                            a{
+                                font-size: 12px;
+                                padding: 10px 20px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    // spotify media 
+
+    // music media 
+    .musc-nw{
+        margin-top: 160px!important;
+    }
+    // music media
+
+            // newwscard media 
+       #news-card{
+    .news-card{
+        .container{
+            padding: 0 40px;
+            .cards{
+                .card{
+                    width: 100%;
+                    &:not(:last-child){
+                        margin-bottom: 20px;
+                    }
+                    .card-full{
+                        .card-img{
+                           height: 300px;
+                       }
+                       .card-content{
+                        h3{
+                            font-size: 40px;
+                            line-height: 50px;
+                            margin-top: 25px!important;
+                        }
+                        p{
+                            line-height: 34px;
+                            margin-top: 25px!important;
+                            font-size: 22px;
+                        }
+                         h4{
+                            font-size: 20px;
+                         }
+                       }
+                   } 
+                }
+            }
+        }
+    }
+        }
+            // newwscard sass 
+            
+            // parties sass 
+       #parties{
+            .parties{
+                .container{
+                    padding: 0 40px;
+                }
+            }
+        }
+    // parties sass 
+
+    // form media
+#registr{
+    height: 900px;
+    .registr{
+        .container{
+                .registr-form{
+                    width: 90%;
+                    form{
+                        .form-full{
+                            .form-names{
+                                .label{
+                                    width: 100%;
+                                        :not(:last-child){
+                                            margin-top:15px;
+                                        }
+                                }
+                                
+                            }
+                            .form-contact{
+                                .label{
+                                    width: 100%;
+                                        :not(:last-child){
+                                            margin-top:15px;
+                                        }
+                                }
+                            }
+                            .form-secret{
+                                .label{
+                                    width: 100%;
+                                .abs{
+                                    width: 39%;
+                                }
+                                :not(:last-child){
+                                    margin-top:5px;
+                                }       
+                                }
+                                
+                            }
+                            .label{
+                                width: 100%;
+                            :not(:last-child){
+                                margin-top:15px;
+                            }
+                        }
+                            .form-finish{
+                                .cekbx{
+                                    width: 100%;  
+                                }
+                                
+                                button{
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}
+// form media 
+    
+          
+
+
+}
+
+@media only screen and (max-width: 460px){
+    // again content media 
+    #again-content{
+        .again-content{
+            .container{
+                padding: 0 20px;
+            }
+        }
+    }
+    // again content media     
+
+     // festival media 
+     #festival{
+        .festival{
+            .container{
+                padding: 0 20px;
+                .full-festival{                        
+                .festival-content{
+                    h2{
+                        line-height: 48px;
+                        font-size: 34px;
+                    }
+                    p{
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                    .festival-list{
+                        .festival-list-item{
+                            font-size: 14px;
+                            span{
+                                font-size: 14px
+                            }
+                        }
+                    }
+                    
+                    .different{
+                        margin-top: 40px;
+                        a{
+                            font-size: 12px;
+                            padding: 10px 20px;
+                        }
+                    }
+                }
+                .festival-img{
+                    margin-top: 206px;
+                    height: 250px;
+                }
+                }
+            }
+        }
+    }
+    // festival media 
+
+        // spotify media 
+        #spotify{
+            .spotify{
+                .container{
+                    padding: 0 20px;
+                    .full-spotify{
+                        .spotify-slide{
+                            height: 250px;
+                        }
+                        .spotify-content{
+                            margin-top: 60px;
+                            h2{
+                                line-height: 48px;
+                                font-size: 34px;
+                            }
+                            p{
+                                font-size: 18px;
+                                line-height: 20px;
+                            }
+                            .spotify-list{
+                                .spotify-list-item{
+                                    font-size: 14px;
+                                    span{
+                                        font-size: 14px
+                                    }
+                                }
+                            }
+                            .different{
+                                margin-top: 40px;
+                                a{
+                                    font-size: 12px;
+                                    padding: 10px 20px;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        // spotify media 
+
+            // newwscard media 
+       #news-card{
+        .news-card{
+            .container{
+                padding: 0 20px;
+                .cards{
+                    .card{
+                        .card-full{
+                            .card-img{
+                               height: 220px;
+                           }
+                           .card-content{
+                            h3{
+                                font-size: 35px;
+                                line-height: 38px!important;
+                            }
+                            p{
+                                line-height: 30px!important;
+                                font-size: 18px!important;
+                            }
+                             h4{
+                                font-size: 16px!important;
+                             }
+                           }
+                       } 
+                    }
+                }
+            }
+        }
+            }
+                // newwscard sass 
+
+            // parties sass 
+            #parties{
+                .parties{
+                    .container{
+                        padding: 0 20px;
+                        .full-parties{
+                            height: 250px;
+                        }
+                    }
+                }
+            }
+              // parties sass     
+              
+            #registr{
+                .form-finish{
+                    button{
+                        font-size: 12px!important;
+                        padding: 6px 24px!important;
+                    }
+                }
+            }
+
+ 
+}
+ 

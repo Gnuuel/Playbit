@@ -1,0 +1,162 @@
+header{
+    background-color: #ffffff;
+    .navigation-bar{
+        .container{
+            padding: 0 40px;
+            .navbar{
+                @include center (center, space-between);
+                margin-top: 20px;
+                .logo{
+                  width: 30%;
+                  h1{
+                    font-weight: 600;
+                    font-family: $fonts;
+                    color: $logoTextColor;
+                    cursor: pointer;
+                  }
+                }
+                nav{
+                  .menu-list{
+                        display: flex;
+                        .menu-list-item{
+                          cursor: pointer;
+                            &:not(:last-child){
+                                margin-right: 20px;
+                            } 
+                            
+                            a{
+                                transition: .3s;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 30px;
+                                color: $logoTextColor;
+                            }
+                            .now{
+                                margin-left: 30px;
+                            }
+                            .now.playing .bar {
+                                display: inline-block;
+                                position: relative;
+                                margin-right: -3px;
+                                width: 2px;
+                                height: 1px;
+                                overflow: hidden;
+                                background: linear-gradient(to bottom, #790000, #be0303);
+                                color: transparent;
+                                animation-name: pulse;
+                                animation-duration: 1s;
+                                animation-iteration-count: infinite;
+                             
+                              @keyframes pulse {
+                                0% {
+                                  height: 1px;
+                                  margin-top: 0;
+                                }
+                                10% {
+                                  height: 10px;
+                                  margin-top: -40px;
+                                }
+                                50% {
+                                  height: 5px;
+                                  margin-top: -20px;
+                                }
+                                60% {
+                                  height: 10px;
+                                  margin-top: -30px;
+                                }
+                                80% {
+                                  height: 20px;
+                                  margin-top: -60px;
+                                }
+                                100% {
+                                  height: 1px;
+                                  margin-top: 0;
+                                }
+                              } 
+                            } 
+                            .n1 {
+                                animation-delay: 0.4s;
+                              }
+                              .n2 {
+                                animation-delay: 0.1s;
+                              }
+                              .n3 {
+                                animation-delay: 1s;
+                              }
+                              .n4 {
+                                animation-delay: 0.7s;
+                              }
+                              .n5 {
+                                animation-delay: 2.1s;
+                              }
+                              .n6 {
+                                animation-delay: 1.1s;
+                              }
+                              .n7 {
+                                animation-delay: 2.9s;
+                              }
+                              .n8 {
+                                animation-delay: 1.7s;
+                              }
+                              .li1{
+                                display: block;
+                              }
+                              .li2{
+                                  display: none;
+                              }
+                              .li3{
+                                display: none;
+                              }
+                              .li4{
+                                display: none;
+                              }
+                             
+                        
+                        }
+                        .i1{
+                            
+                            &:hover{
+                                .li1{
+                                    display: block;
+                                }
+                            }
+                        }
+                        .i2{
+                            
+                            &:hover{
+                                .li2{
+                                    display: block;
+                                }
+                            }
+                        }
+                        .i3{
+                            
+                            &:hover{
+                                .li3{
+                                    display: block;
+                                }
+                            }
+                        }
+                        .i4{
+                            
+                            &:hover{
+                                .li4{
+                                    display: block;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .resp-bar{
+                    display: none;
+                }
+            }
+           
+        }
+         .resp-menu{
+                display: none;
+            }
+    }
+}

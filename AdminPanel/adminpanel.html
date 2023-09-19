@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminpanel.css">
+      <!-- logo photo  -->
+      <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../website/Assets/logo/logo.png"
+    />
+  <!-- logo photo  -->
+  
+  <!-- dataaos link  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- dataaos link  -->
+    <title>AdminPanel</title>
+</head>
+<body>
+
+    <section id="full-admin">
+        <div class="full-admin">
+            <div class="container">
+                <div class="box">
+                    <div class="special">
+                        <ul class="special-menu-list">
+                            <li class="special-menu-list-item home-li active">Home</li>
+                            <li class="special-menu-list-item festival-li">Festival</li>
+                            <li class="special-menu-list-item news-li">News</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- home form  -->
+                    <div class="home-form show">
+                        <div class="form">
+                            <div class="form-full">
+                                <div class="form-image">
+                                    <div class="label">
+                                    <label for="home-img">Upload a file:</label>
+                                    <input type="text" id="home-img-txt" name="name" placeholder="Background Image">
+                                    <span class="abs">Image
+                                    </span>
+                                    <input type="file" id="home-img" >    
+                                    </div>
+                                </div>
+                                <div class="form-title">
+                                    <div class="label">
+                                    <label for="home-title">Title:</label>  
+                                    <input type="text" id="home-title" name="name" placeholder="Title..">  
+                                    </div>
+                                </div>
+                                <div class="label">
+                                <label for="home-content">Content:</label>
+                                <textarea name="subject" id="home-content" placeholder="Contents"></textarea>
+                                </div>
+                                <div class="form-finish">
+                                    <button class="add-btn" id="home-btn">UPDATE</button>
+                                    <!-- <button class="delete-btn-fest" id="home-delete-btn">DELETE</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- home form  -->
+                    
+                    <!-- festival form  -->
+                    <div class="festival-form">
+                        <div class="form">
+                            <div class="form-full">
+                                <div class="form-title">
+                                    <div class="label">
+                                    <label for="fest-title">Title:</label>  
+                                    <input type="text" id="fest-title" name="name" placeholder="Title..">  
+                                    </div>
+                                </div>
+                                <div class="label">
+                                <label for="fest-content">Content:</label>
+                                <textarea name="subject" id="fest-content" placeholder="Contents"></textarea>
+                                </div>
+                                
+                                <div class="form-dates">
+                                    <div class="label">
+                                    <label for="fest-date">Festival Date:</label>
+                                    <input type="date" id="fest-date" name="name" placeholder="Festival Date">    
+                                    </div>
+                                    <div class="label">
+                                    <label for="fest-time">First Time:</label>  
+                                    <input type="time" id="fest-time" name="name" placeholder="Festival Time">  
+                                    </div>
+                                    <div class="label">
+                                    <label for="fest-place">Festival Place:</label>
+                                    <input type="text" id="fest-place" name="name" placeholder="Festival Place">    
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="form-finish">
+                                    <button class="add-btn-fest" id="fest-btn">SEND</button>
+                                    <button class="delete-btn-fest" id="fest-delete-btn">DELETE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- festival form  -->
+                    
+                    <!-- news form  -->
+                    <div class="news-form ">
+                        <div class="form">
+                            <div class="form-full">
+                                <div class="form-image">
+                                    <div class="label">
+                                    <label for="news-img">Upload a file:</label>
+                                    <input id="news-img-txt" type="text" name="name" placeholder="Choose Image">
+                                    <span class="abs">Image
+                                    </span>
+                                    <input type="file" id="news-img" >    
+                                    </div>
+                                </div>
+                                <div class="form-title">
+                                    <div class="label">
+                                    <label for="news-input">Title:</label>  
+                                    <input type="text" id="news-input" name="name" placeholder="Title..">  
+                                    </div>
+                                </div>
+                                <div class="label">
+                                <label for="news-textarea">Content:</label>
+                                <textarea name="subject" id="news-textarea" placeholder="Contents"></textarea>
+                                </div>
+                                <div class="form-finish">
+                                    <button class="add-btn" id="news-btn">SEND</button>
+                                    <button class="delete-btn" id="news-delete-btn">DELETE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- news form  -->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- axios  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- axios  -->
+
+    <script src="adminpanel.js"></script>
+
+</body>
+</html>

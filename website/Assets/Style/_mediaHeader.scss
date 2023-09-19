@@ -1,0 +1,67 @@
+@media only screen and (max-width: 1200px){}
+@media only screen and (max-width: 992px){
+    header{
+        .navigation-bar{
+            position: relative;
+            .container{
+                .navbar{
+                    nav{
+                        display: none;
+                    }
+                    .resp-bar{
+                        display: block;
+                        i{
+                            color: $logoTextColor;
+                            font-size: 30px;
+                        }
+                    }
+                }
+                
+    }
+        .resp-menu{
+            position: absolute;
+            width: 70%;
+            display: block;
+            background-color: #ffffff;
+            height: 100vh;
+            top:-450px;
+            left: -750px;
+            transition: .4s;
+            z-index: 999;
+            padding: 28px;
+            // position: sticky;
+            h2{
+                font-weight: 600;
+                font-family: $fonts;
+                color: $logoTextColor;
+                text-align: center;
+                font-size: 30px;
+            }
+            .resp-menu-list{
+                .resp-menu-list-item{
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        text-align: center;
+                        border: 1px solid $logoTextColor;
+                        font-size: 20px;
+                        padding: 15px;
+                        a{
+                            border-bottom: 0px solid $logoTextColor;
+                            color: $logoTextColor;
+                            font-family: $fonts;
+                            font-weight: 500;
+                            transition: .3s;
+                        }
+                    }
+                
+                }
+        }
+        .resp-menu-show{
+            top:0;
+            left: 0;
+        }
+}
+}
+}
+@media only screen and (max-width: 768px){}
+@media only screen and (max-width: 460px){}
